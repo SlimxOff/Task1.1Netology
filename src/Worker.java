@@ -1,13 +1,4 @@
-@FunctionalInterface
-interface OnTaskDoneListener {
-    void onDone(String result);
-}
-
-@FunctionalInterface
-interface OnTaskErrorListener {
-    void onError(String error);
-}
-class Worker {
+public class Worker {
     private OnTaskDoneListener callback;
     private OnTaskErrorListener errorCallback;
 
